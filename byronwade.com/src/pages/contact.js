@@ -28,7 +28,7 @@ const Contact = () => (
             <div className="group-val ct-gr">
                 <textarea name="message" placeholder="Message"></textarea>
             </div>
-            <button className="btn btn-outline-red">Send Message</button>
+            <button type="submit" className="btn btn-outline-red">Send Message</button>
         </form>
       </div>
     </section>
