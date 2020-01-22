@@ -12,7 +12,8 @@ const IndexPage = () => (
       <div class="container">
         <div class="heroHeader">
           <div class="glitch" data-text="BYRON WADE">BYRON WADE</div>
-          <div class="subGlitch" data-text="Website Designer. Programmer. Im just awesome.">Website Designer. Programmer. Im just awesome.</div>
+          <div class="subGlitch" data-text="Freelance Website Designer/Developer.">Freelance Website Designer/Developer.</div>
+          <p>Websites built on speed and performance. Using the latest tech and frameworks.</p>
         </div>
       </div>
     </section>

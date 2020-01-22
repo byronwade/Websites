@@ -19,7 +19,7 @@ const Resume = () => (
         <div className="container">
             <div className="content quickInfo">
                 <div class="row">
-                    <div class="col-sm-12 col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Location</h4>
@@ -27,7 +27,7 @@ const Resume = () => (
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Phone</h4>
@@ -35,7 +35,7 @@ const Resume = () => (
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Clutch Developments</h4>
@@ -43,7 +43,7 @@ const Resume = () => (
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3">
+                    <div class="col-sm-6 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Email</h4>
@@ -158,7 +158,7 @@ const Resume = () => (
             <div class="sectionContainer row">
                 <header class="sectionHeader colorDarkLight col-sm-12 col-md-3">
                     <div class="content">
-                        <h2 class="sectionHeading">Intro</h2>
+                        <h2 class="sectionHeading">Experiance</h2>
                         <div class="contentBody">What I am all about.</div>
                     </div>
                 </header>
@@ -166,6 +166,19 @@ const Resume = () => (
                     <div class="content">
                         <div class="intro">
                             <div class="contentBody">
+                                <div className="row">
+                                    <div className="col-sm-12 col-md-5">
+                                        <div className="experiance">
+                                            <div class="timeframe">2015 – Present</div>
+                                            <h3 class="heading">Unicorn Incubator Inc.</h3>
+                                            <h4 class="title">Senior Interface Designer</h4>
+                                            <div class="location">Portland, OR</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <p>Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
+                                    </div>
+                                </div>
                                 <div className="row">
                                     <div className="col-sm-12 col-md-5">
                                         <div className="experiance">

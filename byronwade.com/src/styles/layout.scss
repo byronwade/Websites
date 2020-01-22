@@ -109,6 +109,28 @@ a {
   margin: 0 auto;
   display: initial;
   padding: 2px;
+  &:after{
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -4px 0 #FF4136;
+    top: 0;
+    color: white;
+    background: #111111;
+    overflow: hidden;
+    animation: noise-anim 2s infinite linear alternate-reverse;
+  }
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 4px 0 #0074D9;
+    top: 0;
+    color: white;
+    background: #111111;
+    overflow: hidden;
+    animation: noise-anim-2 15s infinite linear alternate-reverse;
+  }
 }
 @keyframes noise-anim {
   $steps: 20;
@@ -120,18 +142,6 @@ a {
     }
   }
 }
-.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -4px 0 #FF4136;
-  top: 0;
-  color: white;
-  background: #111111;
-  overflow: hidden;
-  animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
 @keyframes noise-anim-2 {
   $steps: 20;
   @for $i from 0 through $steps {
@@ -142,17 +152,7 @@ a {
     }
   }
 }
-.glitch::before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 4px 0 #0074D9;
-  top: 0;
-  color: white;
-  background: #111111;
-  overflow: hidden;
-  animation: noise-anim-2 15s infinite linear alternate-reverse;
-}
+
 
 .jumbo {
   .jumboHeader{
@@ -261,6 +261,9 @@ a {
 
 .quickInfo {
   text-align: center;
+  p, address {
+    margin-bottom:0.3em;
+  }
 }
 .sectionContainer {
   z-index: 2;
@@ -272,7 +275,7 @@ a {
   text-align: right;
 }
 .content {
-  padding: 3rem;
+  padding: 1rem 0;
   h2 {
     text-transform: uppercase;
     margin-bottom:0.3em
@@ -330,9 +333,6 @@ a {
 }
 
 @media screen and (max-width: 999px) {
-  .contactForm, .hero {
-    margin:20px;
-  }
   .sectionHeader {
     text-align: left;
   } 
@@ -341,6 +341,13 @@ a {
   }
   .social {
     position: relative !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .quickInfo {
+    p, address {
+      margin-bottom:1.45rem;
+    }
   }
 }
 

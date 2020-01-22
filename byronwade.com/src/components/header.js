@@ -9,6 +9,7 @@ const Header = ({ props, siteTitle }) => (
         <span className="brand"><Link to="/" > {siteTitle} </Link></span>
       </div>
       <div className="menu">
+        <span className="menuItem"><Link to="/" activeClassName="active">Home</Link></span>
         <span className="menuItem"><Link to="/resume/" activeClassName="active">Resume</Link></span>
         <span className="menuItem"><Link to="/portfolio/"activeClassName="active">Portfolio</Link></span>
         <span className="menuItem"><Link to="/blog/" activeClassName="active">Blog</Link></span>
