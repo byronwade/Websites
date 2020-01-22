@@ -12,6 +12,7 @@ const Resume = () => (
       <div class="container">
         <div class="jumboHeader">
           <div class="glitch" data-text="RESUME">RESUME</div>
+          <div class="subGlitch" data-text="My offical resume.">My offical resume.</div>
         </div>
       </div>
     </section>

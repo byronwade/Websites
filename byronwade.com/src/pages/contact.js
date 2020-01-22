@@ -12,6 +12,7 @@ const Contact = () => (
       <div class="container">
         <div class="jumboHeader">
           <div class="glitch" data-text="CONTACT">CONTACT</div>
+          <div class="subGlitch" data-text="Get in touch, lets talk about work or hobbies over coffee.">Get in touch, lets talk about work or hobbies over coffee.</div>
         </div>
       </div>
     </section>
