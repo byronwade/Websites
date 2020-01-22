@@ -18,15 +18,17 @@ const Contact = () => (
     </section>
     <section>
       <div className="container">
-        <form className="contactForm" id="contact" method="post" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="contactForm" id="contact" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="group-val">
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" id="name" name="name" placeholder="Name" />
             </div>
             <div className="group-val">
-                <input type="text" name="email" placeholder="Email" />
+                <input type="text" id="email" name="email" placeholder="Email" />
             </div>
             <div className="group-val ct-gr">
-                <textarea name="message" placeholder="Message"></textarea>
+                <textarea id="message" name="message" placeholder="Message" rows="6" ></textarea>
             </div>
             <button type="submit" className="btn btn-outline-red">Send Message</button>
         </form>
