@@ -465,6 +465,16 @@ a {
       margin-bottom:1.45rem;
     }
   }
+  .subGlitch {
+    font-size:14px;
+  }
+  .social {
+    justify-content: center  !important;
+      a {
+        padding: 0px 10px  !important;
+        font-size: 20px !important;
+    }
+  }
 }
 
 /* BLOG */
@@ -473,6 +483,7 @@ a {
   display: flex;
   -ms-flex-align: start;
   align-items: flex-start;
+  margin-bottom: 30px;
   .blogThumbnail {
     width: 110px;
     height: 110px;
@@ -584,6 +595,7 @@ a {
 }
 
 .portfolioMedia {
+  margin-bottom: 30px;
   display: block;
   a {
     color:#fff;
