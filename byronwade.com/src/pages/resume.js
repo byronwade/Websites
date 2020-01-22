@@ -18,8 +18,8 @@ const Resume = () => (
     <section className="section">
         <div className="container">
             <div className="content quickInfo">
-                <div class="container__row">
-                    <div class="container__col-sm-12 container__col-md-3">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Location</h4>
@@ -27,7 +27,7 @@ const Resume = () => (
                             </div>
                         </div>
                     </div>
-                    <div class="container__col-sm-12 container__col-md-3">
+                    <div class="col-sm-12 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Phone</h4>
@@ -35,7 +35,7 @@ const Resume = () => (
                             </div>
                         </div>
                     </div>
-                    <div class="container__col-sm-12 container__col-md-3">
+                    <div class="col-sm-12 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Clutch Developments</h4>
@@ -43,7 +43,7 @@ const Resume = () => (
                             </div>
                         </div>
                     </div>
-                    <div class="container__col-sm-12 container__col-md-3">
+                    <div class="col-sm-12 col-md-3">
                         <div class="header">
                             <div class="contentBody">
                                 <h4>Email</h4>
@@ -59,14 +59,14 @@ const Resume = () => (
         <div class="colorDarkLight-over"></div>
         <div class="colorDarkLightLighter-over backgroundRight"></div>
         <div class="container">
-            <div class="sectionContainer container__row">
-                <header class="sectionHeader colorDarkLight container__col-sm-12 container__col-md-3">
+            <div class="sectionContainer row">
+                <header class="sectionHeader colorDarkLight col-sm-12 col-md-3">
                     <div class="content">
                         <h2 class="sectionHeading">Intro</h2>
                         <div class="contentBody">What I am all about.</div>
                     </div>
                 </header>
-                <div class="sectionContent colorDarkLightLighter container__col-sm-12 container__col-md-9">
+                <div class="sectionContent colorDarkLightLighter col-sm-12 col-md-9">
                     <div class="content">
                         <div class="intro">
                             <div class="contentBody">
@@ -84,19 +84,19 @@ const Resume = () => (
         <div class="colorDark-over"></div>
         <div class="colorDarkLight-over backgroundRight"></div>
         <div class="container">
-            <div class="sectionContainer container__row">
-                <header class="sectionHeader colorDark container__col-sm-12 container__col-md-3">
+            <div class="sectionContainer row">
+                <header class="sectionHeader colorDark col-sm-12 col-md-3">
                     <div class="content">
                         <h2 class="sectionHeading">EXPERTISE</h2>
                         <div class="contentBody">Batman would be jealous.</div>
                     </div>
                 </header>
-                <div class="sectionContent colorDarkLight container__col-sm-12 container__col-md-9">
+                <div class="sectionContent colorDarkLight col-sm-12 col-md-9">
                     <div class="content">
                         <div class="intro">
                             <div class="contentBody">
-                                <div className="container__row">
-                                    <div className="container__col-sm-12 container__col-md-6">
+                                <div className="row">
+                                    <div className="col-sm-12 col-md-6">
                                         <div class="media">
                                             <div class="mediaFigure">
                                                 <div class="number red">01</div>
@@ -107,7 +107,7 @@ const Resume = () => (
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="container__col-sm-12 container__col-md-6">
+                                    <div className="col-sm-12 col-md-6">
                                         <div class="media">
                                             <div class="mediaFigure">
                                                 <div class="number red">02</div>
@@ -119,8 +119,8 @@ const Resume = () => (
                                         </div>
                                     </div>
                                 </div>
-                                <div className="container__row">
-                                    <div className="container__col-sm-12 container__col-md-6">
+                                <div className="row">
+                                    <div className="col-sm-12 col-md-6">
                                         <div class="media">
                                             <div class="mediaFigure">
                                                 <div class="number red">01</div>
@@ -131,7 +131,7 @@ const Resume = () => (
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="container__col-sm-12 container__col-md-6">
+                                    <div className="col-sm-12 col-md-6">
                                         <div class="media">
                                             <div class="mediaFigure">
                                                 <div class="number red">02</div>
@@ -155,19 +155,19 @@ const Resume = () => (
         <div class="colorDarkLight-over"></div>
         <div class="colorDarkLightLighter-over backgroundRight"></div>
         <div class="container">
-            <div class="sectionContainer container__row">
-                <header class="sectionHeader colorDarkLight container__col-sm-12 container__col-md-3">
+            <div class="sectionContainer row">
+                <header class="sectionHeader colorDarkLight col-sm-12 col-md-3">
                     <div class="content">
                         <h2 class="sectionHeading">Intro</h2>
                         <div class="contentBody">What I am all about.</div>
                     </div>
                 </header>
-                <div class="sectionContent colorDarkLightLighter container__col-sm-12 container__col-md-9">
+                <div class="sectionContent colorDarkLightLighter col-sm-12 col-md-9">
                     <div class="content">
                         <div class="intro">
                             <div class="contentBody">
-                                <div className="container__row">
-                                    <div className="container__col-sm-12 container__col-md-5">
+                                <div className="row">
+                                    <div className="col-sm-12 col-md-5">
                                         <div className="experiance">
                                             <div class="timeframe">2015 – Present</div>
                                             <h3 class="heading">Unicorn Incubator Inc.</h3>
@@ -175,7 +175,7 @@ const Resume = () => (
                                             <div class="location">Portland, OR</div>
                                         </div>
                                     </div>
-                                    <div class="container__col-sm-12 container__col-md-7">
+                                    <div class="col-sm-12 col-md-7">
                                         <p>Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
                                     </div>
                                 </div>
