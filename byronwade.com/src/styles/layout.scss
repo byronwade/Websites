@@ -330,6 +330,9 @@ a {
 }
 
 @media screen and (max-width: 999px) {
+  .container {
+    margin:20px;
+  }
   .sectionHeader {
     text-align: left;
   } 
