@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faBehance, faDiscord, faDribbble, faGithub, faIn
 const Footer = () => {
   return (
     <>
-      <div class="social">
+      <div className="social">
         <a target="_blank" href="https://www.instagram.com/"><FontAwesomeIcon icon={faFacebook} /></a>
         <a target="_blank" href="https://dribbble.com/"><FontAwesomeIcon icon={faDribbble} /></a>
         <a target="_blank" href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a>

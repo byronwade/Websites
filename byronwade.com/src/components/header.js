@@ -3,15 +3,15 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ props, siteTitle }) => (
-  <header class="sticky">
+  <header className="sticky">
     <input type='checkbox' id='toggle' style={{display: "none"}} />
-    <label class='toggle-btn toggle-btn__cross' for='toggle'>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+    <label className='toggle-btn toggle-btn__cross' for='toggle'>
+      <div className="bar"></div>
+      <div className="bar"></div>
+      <div className="bar"></div>
     </label>
-    <nav class="mainNav">
-      <div class="branding">
+    <nav className="mainNav">
+      <div className="branding">
         <span className="brand"><Link to="/" > {siteTitle} </Link></span>
       </div>
       <div className="menu">

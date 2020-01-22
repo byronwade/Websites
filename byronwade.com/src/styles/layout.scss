@@ -122,7 +122,8 @@ a {
   }
 }
 
-
+@media screen and (min-width: 767px) {
+}
 @media screen and (max-width: 767px) {
   header {  
     nav {
@@ -281,24 +282,26 @@ a {
   position: relative;
   margin: 0 auto;
   margin-bottom:0.3rem;
-}
-.subGlitch::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0px;
-  text-shadow: -1px 0 #FF4136;
-  top: 0;
-  color: white;
-  overflow: hidden;
-}
-.subGlitch::before {
-  content: attr(data-text);
-  position: absolute;
-  left: 0px;
-  text-shadow: 2px 0 #0074D9;
-  top: 0;
-  color: white;
-  overflow: hidden;
+  display: initial;
+  padding: 2px;
+  &:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0px;
+    text-shadow: -1px 0 #FF4136;
+    top: 0;
+    color: white;
+    overflow: hidden;
+  }
+  &:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0px;
+    text-shadow: 2px 0 #0074D9;
+    top: 0;
+    color: white;
+    overflow: hidden;
+  }
 }
 
 /* CONTACT */

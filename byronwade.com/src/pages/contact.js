@@ -8,27 +8,27 @@ import SEO from "../components/seo"
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <section class="jumbo">
-      <div class="container">
-        <div class="jumboHeader">
-          <div class="glitch" data-text="CONTACT">CONTACT</div>
-          <div class="subGlitch" data-text="Get in touch, lets talk about work or hobbies over coffee.">Get in touch, lets talk about work or hobbies over coffee.</div>
+    <section className="jumbo">
+      <div className="container">
+        <div className="jumboHeader">
+            <div><div className="glitch" data-text="CONTACT">CONTACT</div></div>
+            <div><div className="subGlitch" data-text="Get in touch, lets talk about work or hobbies over coffee.">Get in touch, lets talk about work or hobbies over coffee.</div></div>
         </div>
       </div>
     </section>
     <section>
-      <div class="container">
+      <div className="container">
         <form className="contactForm" id="contact" method="post">
-            <div class="group-val">
+            <div className="group-val">
                 <input type="text" name="name" placeholder="Name" />
             </div>
-            <div class="group-val">
+            <div className="group-val">
                 <input type="text" name="email" placeholder="Email" />
             </div>
-            <div class="group-val ct-gr">
+            <div className="group-val ct-gr">
                 <textarea name="message" placeholder="Message"></textarea>
             </div>
-            <button class="btn btn-outline-red">Send Message</button>
+            <button className="btn btn-outline-red">Send Message</button>
         </form>
       </div>
     </section>

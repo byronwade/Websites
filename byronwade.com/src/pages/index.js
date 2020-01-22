@@ -11,8 +11,8 @@ const IndexPage = () => (
     <section className="hero">
       <div className="container">
         <div className="heroHeader">
-          <div className="glitch" data-text="BYRON WADE">BYRON WADE</div>
-          <div className="subGlitch" data-text="Freelance Website Designer/Developer.">Freelance Website Designer/Developer.</div>
+          <div><div className="glitch" data-text="BYRON WADE">BYRON WADE</div></div>
+          <div><div className="subGlitch" data-text="Freelance Website Designer/Developer.">Freelance Website Designer/Developer.</div></div>
           <p>Websites built on speed and performance. Using the latest tech and frameworks.</p>
           <Link to="/" className="btn btn-outline-blue">Contact Me</Link>
           <Link to="/" className="btn btn-outline-white btnMarginLeft">See my Github</Link>
@@ -21,14 +21,14 @@ const IndexPage = () => (
     </section>
     <section>
       <div className="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div className="row">
+          <div className="col-lg-4">
               Speed
           </div>
-          <div class="col-lg-4">
+          <div className="col-lg-4">
               Proformance
           </div>
-          <div class="col-lg-4">
+          <div className="col-lg-4">
               SEO
           </div>
         </div>
