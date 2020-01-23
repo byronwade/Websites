@@ -1,52 +1,30 @@
 {
-  "name": "personal-website-for-byron-wade",
+  "name": "gatsby-starter-default",
   "private": true,
-  "description": "My personal website.",
+  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Byron Wade <bcw1995@gmail.com>",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@react-spring/addons": "^9.0.0-beta.33",
-    "@sentry/browser": "^5.11.0",
-    "@sentry/node": "^5.11.0",
-    "bootstrap": "^4.4.1",
     "gatsby": "^2.18.12",
-    "gatsby-background-image": "^0.9.12",
     "gatsby-image": "^2.2.34",
-    "gatsby-plugin-google-analytics": "^2.1.32",
-    "gatsby-plugin-hotjar": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.31",
-    "gatsby-plugin-netlify": "^2.1.31",
-    "gatsby-plugin-netlify-cms": "^4.1.37",
     "gatsby-plugin-offline": "^3.0.27",
     "gatsby-plugin-react-helmet": "^3.1.16",
-    "gatsby-plugin-sass": "^2.1.26",
-    "gatsby-plugin-scroll-reveal": "0.0.4",
+    "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-sharp": "^2.3.5",
-    "gatsby-plugin-sitemap": "^2.2.25",
-    "gatsby-plugin-transition-link": "^1.17.7",
     "gatsby-source-filesystem": "^2.1.40",
-    "gatsby-transformer-remark": "^2.6.48",
     "gatsby-transformer-sharp": "^2.3.7",
-    "lodash": "4.17.15",
-    "netlify-cms-app": "^2.11.5",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
-    "react-ga": "^2.7.0",
-    "react-helmet": "^5.2.1",
-    "react-scripts": "^3.3.0",
-    "react-spring": "^8.0.27",
-    "styled-components": "^4.4.1",
-    "styled-jsx": "3.2.4"
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "typescript": "3.3.3"
+    "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby, react, bootstrap, byronwade, Byron, Wade, custom, three.js, learning, new, web, design"
+    "gatsby"
   ],
   "license": "MIT",
   "scripts": {

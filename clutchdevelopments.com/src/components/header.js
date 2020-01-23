@@ -1,19 +1,33 @@
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import MainMenu from "./mainMenu"
-
-const Header = () => (
-  <header className="sticky-top">
-    <MainMenu />
-  </header>
+const Header = ({ siteTitle }) => (
+  <>
+    <header className="sticky vintageBlack-bg">
+      <nav className="mainNav">
+        <div className="branding">
+          <span className="brand"><Link to="/" > {siteTitle} </Link></span>
+        </div>
+        <div className="menu">
+          <span className="menuItem"><Link to="/" activeClassName="active">Home</Link></span>
+          <span className="menuItem"><Link to="/about-us/" activeClassName="active">About Us</Link></span>
+          <span className="menuItem"><Link to="/services/" activeClassName="active">Services</Link></span>
+          <span className="menuItem"><Link to="/portfolio/"activeClassName="active">Portfolio</Link></span>
+          <span className="menuItem"><Link to="/blog/" activeClassName="active">Blog</Link></span>
+          <span className="menuItem"><Link to="/contact/" activeClassName="active">Contact</Link></span>
+        </div>
+      </nav>
+    </header>
+  </>
 )
+
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Clutch Website Developments`,
 }
 
 export default Header

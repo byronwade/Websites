@@ -5,15 +5,15 @@ import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const AboutUs = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About Us" />
     <section>
       <div className="container">
-        <h1>Hi</h1>
+        <h1>About Us</h1>
       </div>
     </section>
   </Layout>
 )
 
-export default IndexPage
+export default AboutUs
