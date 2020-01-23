@@ -76,6 +76,9 @@ a {
 .mx-auto {
   margin:0 auto;
 }
+.align-center {
+  text-align:center;
+}
 
 
 /* NAVIGATION */
@@ -209,11 +212,11 @@ a {
 
 /* HOME PAGE LAYOUT */
 .hero {
-  height:100vh;
+  height:100%;
   width:100%;
 }
 .heroHeader {
-  padding: 132px 0;
+  padding: 132px 0 25% 0;
 }
 .glitch {
   color: white;
@@ -276,6 +279,7 @@ a {
   }
 }
 
+
 .subGlitch {
   color: white;
   font-size: 20px;
@@ -303,6 +307,159 @@ a {
     overflow: hidden;
   }
 }
+  /*----- TIMELINE ITEM -----*/
+
+  .timeline-item {
+      padding-left: 40px;
+      position: relative;
+      list-style: none;
+      &:last-child {
+          padding-bottom: 0;
+      }
+  }
+
+  /*----- TIMELINE MARKER -----*/
+
+.timeline-marker {
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 15px;
+    &:before {
+        border-radius: 100%;
+        content: "";
+        display: block;
+        height: 15px;
+        position: absolute;
+        top: 4px; left: 0;
+        width: 15px;
+        transition: background 0.3s ease-in-out;
+        background-color: #fff;
+    }
+    &:after {
+        content: "";
+        width: 3px;
+        background: #FF4136;
+        display: block;
+        position: absolute;
+        top: 24px; bottom: 0; left: 6px;
+    }
+    .timeline-item:last-child &:after {
+        content: none;
+    }
+}
+.timeline-item:not(.period):hover .timeline-marker:before {
+    background: #FF4136;
+}
+
+/*----- TIMELINE PERIOD -----*/
+
+.period {
+    padding: 0;
+    .timeline-info {
+        display: none;
+    }
+    .timeline-marker {
+        &:before {
+            background: transparent;
+            content: "";
+            width: 15px;
+            height: auto;
+            border: none;
+            border-radius: 0;
+            top: 0;
+            bottom: 30px;
+            position: absolute;
+            border-top: 3px solid #FF4136;
+            border-bottom: 3px solid #FF4136;
+        }
+        &:after {
+            content: "";
+            height: 32px;
+            top: auto;
+        }
+    }
+    .timeline-content {
+        padding: 40px 0 70px;
+    }
+    .timeline-title {
+        margin: 0;
+    }
+}
+.timeline-centered {
+    @media (min-width: 992px) {
+        &,
+        .timeline-item,
+        .timeline-info,
+        .timeline-marker,
+        .timeline-content {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        .timeline-item {
+            padding-bottom: 40px;
+            overflow: hidden;
+        }
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            margin-left: -7.5px;
+        }
+        .timeline-info,
+        .timeline-content {
+            width: 50%;
+        }
+        > .timeline-item:nth-child(odd) .timeline-info {
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+        }
+        > .timeline-item:nth-child(odd) .timeline-content {
+            float: right;
+            text-align: left;
+            padding-left: 30px;
+        }    
+        > .timeline-item:nth-child(even) .timeline-info {
+            float: right;
+            text-align: left;
+            padding-left: 30px;
+        }
+        > .timeline-item:nth-child(even) .timeline-content {
+            float: left;
+            text-align: right;
+            padding-right: 30px;
+        }
+        > .timeline-item.period .timeline-content {
+            float: none;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .timeline-item.period {
+            padding: 50px 0 90px;
+        }
+        .period .timeline-marker:after {
+            height: 30px;
+            bottom: 0;
+            top: auto;
+        }
+        .period .timeline-title {
+            left: auto;
+        }
+    }
+}
+.importantItems {
+  padding: 3em;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  color:#333;
+}
+
+
+
+
+
 
 /* CONTACT */
 .contactForm {
@@ -539,6 +696,15 @@ a {
   }
 }
 
+/* BLOG POST */
+.blogPostMedia {
+  .blogPostThumnail {
+    max-width: 320px;
+    float: left;
+    padding: 0 20px 20px 0;
+  }
+}
+
 
 /* PROJECTS */
 .portfolio {
@@ -637,13 +803,7 @@ a {
 
 /* FOOTER */
 .social {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  z-index: 1020;
   padding: 20px 20px 20px 0;
-  display: flex;
-  justify-content: flex-end;
   a {
     color: #fff;
     padding: 0 7px;
@@ -654,6 +814,25 @@ a {
   }
 }
 footer {
-  text-align: center;
-  padding:20px;
+  .contactMe {
+    margin:4em 0 5em 0;
+  }
+  .siteInfo {
+    margin-bottom:2em;
+  }
+  .list-unstyled {
+    list-style:none;
+    margin:0;
+    .listItem {
+      text-decoration:none;
+      color:#fff;
+      &:hover {
+        text-decoration:underline;
+        color:#FF4136;
+      }
+      &.active {
+        color:#0056b3;
+      }
+    }
+  }
 }
