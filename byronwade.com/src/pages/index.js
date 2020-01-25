@@ -45,7 +45,7 @@ const IndexPage = () => (
                   <li class="timeline-item period">
                       <div class="timeline-marker"></div>
                       <div class="timeline-content">
-                          <h2 class="timeline-title">April 2016</h2>
+                          <h2 class="timeline-title">My Website Develpment Process</h2>
                       </div>
                   </li>
                   <li class="timeline-item">
@@ -74,7 +74,7 @@ const IndexPage = () => (
                       <div class="timeline-info"></div>
                       <div class="timeline-marker"></div>
                       <div class="timeline-content">
-                          <h2 class="timeline-title">April 2016</h2>
+                          <h2 class="timeline-title">Design</h2>
                       </div>
                   </li>
                   <li class="timeline-item">

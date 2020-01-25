@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 align-center contactMe">
-              <Link to="/contact/" type="submit" className="btn btn-outline-blue">Lets Talk? Maybe get some coffee</Link>
+              <Link to="/contact/" className="btn btn-outline-blue">Lets Talk? Maybe get some coffee</Link>
             </div>
           </div>
           <div className="row">
