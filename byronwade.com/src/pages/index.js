@@ -7,15 +7,15 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Local Website Designer/Developer" />
     <section className="hero">
       <div className="container">
         <div className="heroHeader">
           <div><div className="glitch" data-text="BYRON WADE">BYRON WADE</div></div>
           <div><div className="subGlitch" data-text="Freelance Website Designer/Developer.">Freelance Website Designer/Developer.</div></div>
           <p>Websites built on speed and performance. Using the latest tech and frameworks.</p>
-          <Link to="/" className="btn btn-outline-blue">Contact Me</Link>
-          <Link to="/" className="btn btn-outline-white btnMarginLeft">See my Github</Link>
+          <Link to="/contact/" className="btn btn-outline-red">Contact Me</Link>
+          <a href="https://github.com/byronwade" className="btn btn-outline-white btnMarginLeft">See my Github</a>
         </div>
       </div>
     </section>
@@ -50,24 +50,22 @@ const IndexPage = () => (
                   </li>
                   <li class="timeline-item">
                       <div class="timeline-info">
-                          <span>March 12, 2016</span>
+                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                              eu pede mollis pretium. Pellentesque ut neque.</p>
                       </div>
                       <div class="timeline-marker"></div>
                       <div class="timeline-content">
                           <h3 class="timeline-title">Event Title</h3>
-                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                              eu pede mollis pretium. Pellentesque ut neque.</p>
                       </div>
                   </li>
                   <li class="timeline-item">
                       <div class="timeline-info">
-                          <span>March 23, 2016</span>
+                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                              eu pede mollis pretium. Pellentesque ut neque. </p>
                       </div>
                       <div class="timeline-marker"></div>
                       <div class="timeline-content">
                           <h3 class="timeline-title">Event Title</h3>
-                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                              eu pede mollis pretium. Pellentesque ut neque. </p>
                       </div>
                   </li>
                   <li class="timeline-item period">
@@ -79,24 +77,22 @@ const IndexPage = () => (
                   </li>
                   <li class="timeline-item">
                       <div class="timeline-info">
-                          <span>April 02, 2016</span>
+                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                              eu pede mollis pretium. Pellentesque ut neque. </p>
                       </div>
                       <div class="timeline-marker"></div>
                       <div class="timeline-content">
                           <h3 class="timeline-title">Event Title</h3>
-                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                              eu pede mollis pretium. Pellentesque ut neque. </p>
                       </div>
                   </li>
                   <li class="timeline-item">
                       <div class="timeline-info">
-                          <span>April 28, 2016</span>
+                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
+                              eu pede mollis pretium. Pellentesque ut neque. </p>
                       </div>
                       <div class="timeline-marker"></div>
                       <div class="timeline-content">
                           <h3 class="timeline-title">Event Title</h3>
-                          <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis
-                              eu pede mollis pretium. Pellentesque ut neque. </p>
                       </div>
                   </li>
               </ul>
