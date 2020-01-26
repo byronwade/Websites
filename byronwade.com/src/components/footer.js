@@ -1,9 +1,28 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter, faBehance, faDiscord, faDribbble, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+{
+    allMarkdownRemark(filter: {fields: {slug: {regex: "/blog/"}}}, limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`)
+console.log(data)
+const { edges: posts } = data.allMarkdownRemark
   return (
     <>
       <footer class="footer">
@@ -33,10 +52,9 @@ const Footer = () => {
             <div className="col-6 col-md">
                 <h4>Blog Posts</h4>
                 <ul className="list-unstyled">
-                  <li><Link className="listItem" to="/blog-post/">The Making of Thorbis Hosting Panel...</Link></li>
-                  <li><Link className="listItem" to="/blog-post/">The Making of Thorbis Hosting Panel...</Link></li>
-                  <li><Link className="listItem" to="/blog-post/">The Making of Thorbis Hosting Panel...</Link></li>
-                  <li><Link className="listItem" to="/blog-post/">The Making of Thorbis Hosting Panel...</Link></li>
+                {posts && posts.map(({ node: post }) => (
+                  <li><Link className="listItem" to={post.fields.slug}>{post.frontmatter.title}</Link></li>
+                ))}
                 </ul>
             </div>
             <div className="col-6 col-md">
