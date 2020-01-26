@@ -19,9 +19,6 @@ collections:
     create: true
     update: true
     delete: true
-    filter:
-      - field: "categories"
-        value: "business"
     fields:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Author", name: "auther", widget: "string", default: "Byron Wade"}
@@ -37,9 +34,6 @@ collections:
     create: true
     update: true
     delete: true
-    filter:
-      - field: "categories"
-        value: "business" 
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "auther", widget: "string", default: "Byron Wade"}
