@@ -15,8 +15,8 @@ collections:
   - label: "Blog"
     name: "blog"
     slug: "{{month}}-{{day}}-{{slug}}"
-    folder: "byronwade.com/blog/"
-    path: 'byronwade.com/blog/{{year}}/{{slug}}'
+    folder: "byronwade.com/_blog/"
+    path: 'byronwade.com/_blog/{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
@@ -33,8 +33,8 @@ collections:
   - label: "Portfolio"
     name: "portfolio"
     slug: "{{month}}-{{day}}-{{slug}}"
-    folder: "byronwade.com/portfolio/"
-    path: 'byronwade.com/portfolio/{{year}}/{{slug}}'
+    folder: "byronwade.com/_portfolio/"
+    path: 'byronwade.com/_portfolio/{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
