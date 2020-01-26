@@ -43,7 +43,6 @@ collections:
         value: "business" 
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Website Deploy Location", name: "deploy", widget: "string"}
       - {label: "Github Location", name: "github", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Featured Image", name: "projects-features-image", widget: "image"}
