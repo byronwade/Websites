@@ -36,7 +36,7 @@ collections:
     delete: true
     filter:
       - field: "categories"
-        value: "business"
+        value: "business" 
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Website Deploy Location", name: "deploy", widget: "string"}
