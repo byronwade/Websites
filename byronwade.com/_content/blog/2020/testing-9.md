@@ -2,8 +2,8 @@
 title: 'Testing# 9'
 auther: Byron Wade
 date: 2020-01-26T03:05:07.620Z
-thumbnail: HACKK2.jpg
-features-image: HACKK2.jpg
+thumbnail: attachment_80802860.jpg
+features-image: attachment_80802860.jpg
 ---
 This is my first post on my new fake blog! How exciting!
 
