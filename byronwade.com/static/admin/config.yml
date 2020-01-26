@@ -14,10 +14,9 @@ publish_mode: editorial_workflow
 collections:
   - label: "Blog"
     name: "blog"
-    preview_path: "blog/{{year}}-{{month}}-{{day}}-{{slug}}"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    folder: "blog/"
-    path: 'blog/{{year}}/{{slug}}'
+    slug: "{{month}}-{{day}}-{{slug}}"
+    folder: "byronwade.com/blog/"
+    path: 'byronwade.com/blog/{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
@@ -33,10 +32,9 @@ collections:
         - {label: "Body", name: "body", widget: "markdown"}
   - label: "Portfolio"
     name: "portfolio"
-    preview_path: "portfolio/{{year}}-{{month}}-{{day}}-{{slug}}"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    folder: "portfolio/"
-    path: 'portfolio/{{year}}/{{slug}}'
+    slug: "{{month}}-{{day}}-{{slug}}"
+    folder: "byronwade.com/portfolio/"
+    path: 'byronwade.com/portfolio/{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
