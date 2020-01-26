@@ -30,7 +30,7 @@ export default function Template({ data }) {
     <div className="row">
         <div className="col-lg-12">
             <div className="blogMedia">
-              <Link to={post.fields.slug}><Img className="blogThumbnail" fluid={post.frontmatter.thumbnail.childImageSharp.fluid} alt={post.frontmatter.title} /></Link>
+              <Link to={post.fields.slug}><Img className="blogThumbnail" fixed={post.frontmatter.thumbnail.childImageSharp.fixed} alt={post.frontmatter.title} /></Link>
               <div className="mediaBody">
                 <h3 className="title"><Link to={post.fields.slug}>{post.frontmatter.title}</Link></h3>
                 <div className="meta"><span className="date">Published on {post.frontmatter.date}</span><span className="time">{post.timeToRead} min read</span><span className="auther">{post.frontmatter.auther}</span></div>
@@ -57,9 +57,8 @@ export const pageQuery = graphql`
             features_image
             thumbnail {
               childImageSharp {
-                fluid {
-                  aspectRatio
-                  base64
+                fixed(width: 110, height: 110) {
+                   ...GatsbyImageSharpFixed
                 }
               }
             }

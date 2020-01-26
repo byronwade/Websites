@@ -44,9 +44,9 @@ query($slug: String!) {
         auther
         thumbnail {
           childImageSharp {
-            fluid {
-              aspectRatio
-              base64
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+              presentationWidth
             }
           }
         }

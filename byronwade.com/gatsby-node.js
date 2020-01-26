@@ -23,6 +23,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                   fluid {
                     aspectRatio
                     base64
+                    tracedSVG
                   }
                 }
               }
