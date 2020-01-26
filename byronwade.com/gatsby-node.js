@@ -15,10 +15,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               auther
               date(formatString: "MM/DD/YYYY")
               description
-              features_image
               github
-              projects_features_image
-              thumbnail {
+              image {
                 childImageSharp {
                   fluid {
                     aspectRatio
