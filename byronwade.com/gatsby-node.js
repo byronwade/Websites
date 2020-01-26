@@ -7,6 +7,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allMarkdownRemark(sort: {fields: frontmatter___date}) {
         edges {
           node {
+            fields {
+              slug
+            }
             frontmatter {
               auther
               date(formatString: "MM/DD/YYYY")
@@ -28,7 +31,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: '/blog/' + node.frontmatter.title,
+      path: node.fields.slug,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
     })

@@ -66,6 +66,7 @@ module.exports = {
         path: `${__dirname}/_content/`,
       },
     },
+    'gatsby-plugin-slug',
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-netlify-cms-paths`,
