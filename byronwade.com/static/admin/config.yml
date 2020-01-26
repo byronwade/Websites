@@ -9,7 +9,6 @@ public_folder: /src/images
 site_url: https://byronwade.com
 display_url: https://byronwade.com
 logo_url: https://www.byronwade.com/icons/icon-48x48.png
-publish_mode: editorial_workflow
 
 collections:
   - label: "Blog"
