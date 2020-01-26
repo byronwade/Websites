@@ -14,9 +14,9 @@ publish_mode: editorial_workflow
 collections:
   - label: "Blog"
     name: "blog"
-    slug: "{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     folder: "byronwade.com/_blog/"
-    path: '{{year}}/{{slug}}'
+    path: '{{year}}'
     create: true
     update: true
     delete: true
@@ -32,9 +32,9 @@ collections:
         - {label: "Body", name: "body", widget: "markdown"}
   - label: "Portfolio"
     name: "portfolio"
-    slug: "{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     folder: "byronwade.com/_portfolio/"
-    path: '{{year}}/{{slug}}'
+    path: '{{year}}'
     create: true
     update: true
     delete: true
