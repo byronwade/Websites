@@ -1,10 +1,9 @@
 ---
-title: Teting
+title: Testing
 auther: Byron Wade
 date: 2020-01-26T03:05:07.620Z
 thumbnail: /src/images/HACKK2.jpg
 features-image: /src/images/HACKK2.jpg
-slug: wwerewr
 ---
 This is my first post on my new fake blog! How exciting!
 
