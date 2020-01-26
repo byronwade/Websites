@@ -12,7 +12,7 @@ publish_mode: editorial_workflow
 collections:
   - label: "Blog"
     name: "blog"
-    preview_path: "blog/{{year}}/{{month}}/{{slug}}/"
+    preview_path: "blog/{{year}}-{{month}}-{{day}}-{{slug}}"
     folder: "_posts/"
     create: true
     update: true
@@ -29,7 +29,7 @@ collections:
         - {label: "Body", name: "body", widget: "markdown"}
   - label: "Portfolio"
     name: "portfolio"
-    preview_path: "portfolio/{{year}}/{{month}}/{{slug}}/"
+    preview_path: "portfolio/{{year}}-{{month}}-{{day}}-{{slug}}"
     folder: "portfolio/"
     create: true
     update: true
