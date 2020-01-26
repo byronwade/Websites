@@ -55,15 +55,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `_posts`,
-        path: `${__dirname}/_posts/`,
+        name: `blog`,
+        path: `${__dirname}/blog/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `_portfolio`,
-        path: `${__dirname}/_portfolio/`,
+        name: `portfolio`,
+        path: `${__dirname}/portfolio/`,
       },
     },
     `gatsby-plugin-netlify-cms`,

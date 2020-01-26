@@ -1,6 +1,7 @@
 backend:
-    name: git-gateway
+    name: github
     branch: master
+    repo: byronwade/Websites/byronwade.com
     use_graphql: true
   
 media_folder: static/img
