@@ -1,34 +1,55 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+//import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+//import Image from "../components/image"
+import SEO from "../components/seo"
 import { graphql } from "gatsby"
-// import '../css/blog-post.css';
+import Img from "gatsby-image"
+
+
 export default function Template({ data }) {
   const { markdownRemark: post } = data
   return (
-    <div className="blog-post-container">
-      <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+<Layout>
+<SEO title={`Blog | ${post.frontmatter.title}`} />
+<section>
+  <div className="container">
+    
+    <div className="row">
+      <div className="col-lg-12">
+          <div className="blogPostMedia">
+            <Img className="blogPostThumbnail" fluid={post.frontmatter.thumbnail.childImageSharp.fluid} alt={post.frontmatter.title} />
+            <div className="mediaBody">
+              <h1 className="title">{post.frontmatter.title}</h1>
+              <div className="content" dangerouslySetInnerHTML={{ __html: post.html}}></div>
+              <div className="auther red">Written by {post.frontmatter.auther} (Dont mind the spelling or grammer im a programmer first writer second!)</div>
+            </div>
+          </div>
       </div>
     </div>
+
+  </div>
+</section>
+</Layout>
   )
 }
 export const pageQuery = graphql`
-query MyQuery {
-    markdownRemark(fields: {slug: {}}) {
+query($slug: String!) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       frontmatter {
-        auther
-        date
-        description
-        features_image
-        github
-        thumbnail
-        projects_features_image
         title
+        features_image
+        date
+        auther
+        thumbnail {
+          childImageSharp {
+            fluid {
+              aspectRatio
+              base64
+            }
+          }
+        }
       }
       html
     }
