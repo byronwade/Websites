@@ -1,6 +1,7 @@
 backend:
     name: git-gateway
     branch: master
+    repo: byronwade/Websites/byronwade.com
   
 media_folder: static/img
 public_folder: /src/images
@@ -13,7 +14,9 @@ collections:
   - label: "Blog"
     name: "blog"
     preview_path: "blog/{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     folder: "_posts/"
+    path: '_posts/{{slug}}'
     create: true
     update: true
     delete: true
@@ -30,7 +33,9 @@ collections:
   - label: "Portfolio"
     name: "portfolio"
     preview_path: "portfolio/{{year}}-{{month}}-{{day}}-{{slug}}"
-    folder: "portfolio/"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: "_portfolio/"
+    path: '_portfolio/{{slug}}'
     create: true
     update: true
     delete: true
