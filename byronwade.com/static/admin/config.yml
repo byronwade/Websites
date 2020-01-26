@@ -16,7 +16,7 @@ collections:
     name: "blog"
     slug: "{{month}}-{{day}}-{{slug}}"
     folder: "byronwade.com/_blog/"
-    path: 'byronwade.com/_blog/{{year}}/{{slug}}'
+    path: '{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
@@ -34,7 +34,7 @@ collections:
     name: "portfolio"
     slug: "{{month}}-{{day}}-{{slug}}"
     folder: "byronwade.com/_portfolio/"
-    path: 'byronwade.com/_portfolio/{{year}}/{{slug}}'
+    path: '{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
