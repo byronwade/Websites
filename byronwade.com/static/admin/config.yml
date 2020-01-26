@@ -15,7 +15,7 @@ collections:
     name: "blog"
     slug: "{{slug}}"
     folder: "byronwade.com/_content/blog/"
-    path: 'blog/{{year}}/{{slug}}'
+    path: '{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
@@ -30,12 +30,13 @@ collections:
     name: "portfolio"
     slug: "{{slug}}"
     folder: "byronwade.com/_content/portfolio/"
-    path: 'portfolio/{{year}}/{{slug}}'
+    path: '{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: true}
       - {label: "Author", name: "auther", widget: "string", default: "Byron Wade"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Github Location", name: "github", widget: "string", required: false}

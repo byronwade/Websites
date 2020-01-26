@@ -25,7 +25,6 @@ export default function Template({ data }) {
     <section>
       <div className="container">
         
-
 {posts && posts.map(({ node: post }) => (
     <div className="row">
         <div className="col-lg-12">
