@@ -15,9 +15,9 @@ const Footer = () => (
         <div className="prop1">Is Everything</div>
         <div className="prop2">We Can Show You</div>
       </div>
-      <div className="propContact vintageRed-bg">
+      <Link to="/contact/" className="propContact vintageRed-bg">
         <div className="prop3">Contact Us</div>
-      </div>
+      </Link>
     </div>
     <footer className="vintageBlack-bg white">
       <div className="container">

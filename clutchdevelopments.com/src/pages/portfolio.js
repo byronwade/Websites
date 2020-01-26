@@ -9,9 +9,7 @@ const Portfolio = () => (
   <Layout>
     <SEO title="Portfolio" />
     <section>
-      <div className="container">
-        <h1>Portfolio</h1>
-      </div>
+      
     </section>
   </Layout>
 )
