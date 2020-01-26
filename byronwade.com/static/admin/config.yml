@@ -14,7 +14,7 @@ collections:
   - label: "Blog"
     name: "blog"
     slug: "{{slug}}"
-    folder: "byronwade.com/_content/"
+    folder: "byronwade.com/_content/blog/"
     path: 'blog/{{year}}/{{slug}}'
     create: true
     update: true
@@ -29,7 +29,7 @@ collections:
   - label: "Portfolio"
     name: "portfolio"
     slug: "{{slug}}"
-    folder: "byronwade.com/_content/"
+    folder: "byronwade.com/_content/portfolio/"
     path: 'portfolio/{{year}}/{{slug}}'
     create: true
     update: true
