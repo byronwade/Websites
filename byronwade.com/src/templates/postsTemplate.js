@@ -19,8 +19,7 @@ export default function Template({ data }) {
 }
 export const pageQuery = graphql`
 query MyQuery {
-    markdownRemark {
-      id
+    markdownRemark(fields: {slug: {}}) {
       frontmatter {
         auther
         date
