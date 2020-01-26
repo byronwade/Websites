@@ -27,8 +27,8 @@ collections:
         - {label: "Thumbnail", name: "thumbnail", widget: "image"}
         - {label: "Featured Image", name: "features-image", widget: "image"}
         - {label: "Body", name: "body", widget: "markdown"}
-  - label: "portfolio"
-    name: "Portfolio"
+  - label: "Portfolio"
+    name: "portfolio"
     preview_path: "portfolio/{{year}}/{{month}}/{{slug}}/"
     folder: "portfolio/"
     create: true
