@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 //import Image from "../components/image"
-import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 const Blog = () => (
@@ -23,7 +22,7 @@ const Blog = () => (
         <div className="row">
           <div className="col-lg-12">
               <div className="blogMedia">
-                <Link to="/blog/blog-post/"><Img className="blogThumbnail" src="https://themes.3rdwavemedia.com/demo/devblog/assets/images/blog/blog-post-thumb-3.jpg" alt="image" /></Link>
+                <Link to="/blog/blog-post/"><img className="blogThumbnail" src="https://themes.3rdwavemedia.com/demo/devblog/assets/images/blog/blog-post-thumb-3.jpg" alt="image" /></Link>
                 <div className="mediaBody">
                   <h3 className="title"><Link to="/blog-post/">Heading Lorem Ipsum Dolor Sit Amet</Link></h3>
                   <div className="meta"><span className="date">Published 3 months ago</span><span className="time">5 min read</span><span className="auther">Byron Wade</span></div>
