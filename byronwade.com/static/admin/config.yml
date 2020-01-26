@@ -1,7 +1,8 @@
 backend:
-    name: git-gateway
+    name: github
     branch: master
     repo: byronwade/Websites/byronwade.com
+    use_graphql: true
   
 media_folder: static/img
 public_folder: /src/images
@@ -15,8 +16,8 @@ collections:
     name: "blog"
     preview_path: "blog/{{year}}-{{month}}-{{day}}-{{slug}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    folder: "_posts/"
-    path: '_posts/{{slug}}'
+    folder: "blog/"
+    path: 'blog/{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
@@ -34,8 +35,8 @@ collections:
     name: "portfolio"
     preview_path: "portfolio/{{year}}-{{month}}-{{day}}-{{slug}}"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    folder: "_portfolio/"
-    path: '_portfolio/{{slug}}'
+    folder: "portfolio/"
+    path: 'portfolio/{{year}}/{{slug}}'
     create: true
     update: true
     delete: true
