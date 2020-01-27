@@ -62,7 +62,6 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
-            auther
             date(formatString: "MM/DD/YYYY")
             title
             github

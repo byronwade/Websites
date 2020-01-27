@@ -35,7 +35,6 @@ collections:
     delete: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "auther", widget: "string", default: "Byron Wade"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Github Location", name: "github", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
