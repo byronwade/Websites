@@ -2,10 +2,11 @@ const path = require("path")
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/postsTemplate.js`);
-  const blogPageTemplate = path.resolve(`src/templates/blogPageTemplate.js`)
+  const blogPageTemplate = path.resolve(`src/templates/blogPageTemplate.js`);
+  const portfolioPageTemplate = path.resolve(`src/templates/portfolioPageTemplate.js`)
   const result = await graphql(`
     {
-      allMarkdownRemark(filter: {fields: {slug: {regex: "/blog/"}}}) {
+      allMarkdownRemark(filter: {fields: {slug: {regex: "/blog|portfolio/"}}}) {
         edges {
           node {
             fields {
@@ -40,14 +41,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.fields.slug,
       component: blogPostTemplate,
-      context: {slug: node.fields.slug,}, // additional data can be passed via context
+      context: {slug: node.fields.slug} // additional data can be passed via context
     })
   })
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: '/blog/',
-      component: blogPageTemplate,
-      context: {slug: node.fields.slug,}, // additional data can be passed via context
-    })
+  createPage({
+    path: '/blog/',
+    component: blogPageTemplate,
+    context: {}
+  })
+  createPage({
+    path: '/portfolio/',
+    component: portfolioPageTemplate,
+    context: {}
   })
 }

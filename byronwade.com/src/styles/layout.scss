@@ -11,6 +11,7 @@
 */
 @import "grid.scss";
 @import "reset.scss";
+@import "type.scss";
 
 /* OVERALL STYLES */
 .btn-outline-red {
@@ -697,12 +698,14 @@ a {
 }
 
 /* BLOG POST */
-.blogPostMedia {
-  .blogPostThumnail {
-    max-width: 320px;
-    float: left;
-    padding: 0 20px 20px 0;
-  }
+.blogPostThumbnail {
+  max-width: 320px;
+  margin: 0 20px 20px 0;
+}
+.medaBody img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 

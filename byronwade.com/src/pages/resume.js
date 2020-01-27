@@ -40,7 +40,7 @@ const Resume = () => (
                         <div className="header">
                             <div className="contentBody">
                                 <h4>Clutch Developments</h4>
-                                <p><a href="https://www.clutchdevelopments.com" target="_blank">cluchdevelopments.com</a></p>
+                                <p><a href="https://www.clutchdevelopments.com">cluchdevelopments.com</a></p>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@ const Resume = () => (
                         <div className="header">
                             <div className="contentBody">
                                 <h4>Email</h4>
-                                <p><a href="#" target="_blank">bcw1995@gmail.com</a></p>
+                                <p><a href="mailto:bcw1995@gmail.com">bcw1995@gmail.com</a></p>
                             </div>
                         </div>
                     </div>

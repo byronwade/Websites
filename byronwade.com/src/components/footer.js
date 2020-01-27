@@ -7,7 +7,7 @@ import { faFacebook, faTwitter, faBehance, faDiscord, faDribbble, faGithub, faIn
 const Footer = () => {
   const data = useStaticQuery(graphql`
 {
-    allMarkdownRemark(filter: {fields: {slug: {regex: "/blog/"}}}, limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
+    posts: allMarkdownRemark(filter: {fields: {slug: {regex: "/blog/"}}}, limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
           frontmatter {
@@ -19,10 +19,20 @@ const Footer = () => {
         }
       }
     }
+    projects: allMarkdownRemark(filter: {fields: {slug: {regex: "/portfolio/"}}}, limit: 5, sort: {fields: frontmatter___date, order: DESC}) {
+      edges {
+        node {
+          frontmatter {
+            title
+            github
+          }
+        }
+      }
+    }
   }
 `)
-console.log(data)
-const { edges: posts } = data.allMarkdownRemark
+const { edges: posts } = data.posts
+const { edges: projects } = data.projects
   return (
     <>
       <footer class="footer">
@@ -52,18 +62,17 @@ const { edges: posts } = data.allMarkdownRemark
             <div className="col-6 col-md">
                 <h4>Blog Posts</h4>
                 <ul className="list-unstyled">
-                {posts && posts.map(({ node: post }) => (
-                  <li><Link className="listItem" to={post.fields.slug}>{post.frontmatter.title}</Link></li>
-                ))}
+                  {posts && posts.map(({ node: post }) => (
+                    <li><Link className="listItem" to={post.fields.slug}>{post.frontmatter.title}</Link></li>
+                  ))}
                 </ul>
             </div>
             <div className="col-6 col-md">
-                <h4>Personal Portfolio</h4>
+                <h4>Personal Projects on Github</h4>
                 <ul className="list-unstyled">
-                  <li><Link className="listItem" to="/">Thorbis</Link></li>
-                  <li><Link className="listItem" to="/">HeadlessCMS</Link></li>
-                  <li><Link className="listItem" to="/">Gopher</Link></li>
-                  <li><Link className="listItem" to="/portfolio/">More...</Link></li>
+                  {projects && projects.map(({ node: project }) => (
+                    <li><a className="listItem" href={project.frontmatter.github}>{project.frontmatter.title}</a></li>
+                  ))}
                 </ul>
             </div>
             <div className="col-6 col-md">
@@ -77,13 +86,13 @@ const { edges: posts } = data.allMarkdownRemark
           </div>
           <div className="row">
             <div className="col-12 align-center social">
-              <a target="_blank" href="https://www.instagram.com/"><FontAwesomeIcon icon={faFacebook} /></a>
-              <a target="_blank" href="https://dribbble.com/"><FontAwesomeIcon icon={faDribbble} /></a>
-              <a target="_blank" href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a>
-              <a target="_blank" href="https://github.com/"><FontAwesomeIcon icon={faGithub} /></a>
-              <a target="_blank" href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a>
-              <a target="_blank" href="https://www.instagram.com/"><FontAwesomeIcon icon={faDiscord} /></a>
-              <a target="_blank" href="https://www.instagram.com/"><FontAwesomeIcon icon={faBehance} /></a>
+              <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href="https://dribbble.com/"><FontAwesomeIcon icon={faDribbble} /></a>
+              <a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="https://github.com/"><FontAwesomeIcon icon={faGithub} /></a>
+              <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faDiscord} /></a>
+              <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faBehance} /></a>
             </div>
           </div>
         </div>

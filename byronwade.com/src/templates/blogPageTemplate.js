@@ -9,7 +9,9 @@ import Img from "gatsby-image"
 
 
 export default function Template({ data }) {
-    const { edges: posts } = data.allMarkdownRemark
+
+  const { edges: posts } = data.allMarkdownRemark
+  
   return (
 
     <Layout>
@@ -25,22 +27,23 @@ export default function Template({ data }) {
     <section>
       <div className="container">
         
-{posts && posts.map(({ node: post }) => (
-    <div className="row">
+      {posts && posts.map(({ node: post }) => (
+      <div className="row">
         <div className="col-lg-12">
-            <div className="blogMedia">
-              <Link to={post.fields.slug}><Img className="blogThumbnail" fixed={post.frontmatter.image.childImageSharp.fixed} alt={post.frontmatter.title} /></Link>
-              <div className="mediaBody">
-                <h3 className="title"><Link to={post.fields.slug}>{post.frontmatter.title}</Link></h3>
-                <div className="meta"><span className="date">Published on {post.frontmatter.date}</span><span className="time">{post.timeToRead} min read</span><span className="auther">{post.frontmatter.auther}</span></div>
-                <div className="intro">{post.excerpt}</div>
-                <Link to={post.fields.slug} className="moreLink blue">Read more →</Link>
-              </div>
+          <div className="blogMedia">
+            <Link to={post.fields.slug}><Img className="blogThumbnail" fixed={post.frontmatter.image.childImageSharp.fixed} alt={post.frontmatter.title} /></Link>
+            <div className="mediaBody">
+              <h3 className="title"><Link to={post.fields.slug}>{post.frontmatter.title}</Link></h3>
+              <div className="meta"><span className="date">Published on {post.frontmatter.date}</span><span className="time">{post.timeToRead} min read</span><span className="auther">{post.frontmatter.auther}</span></div>
+              <div className="intro">{post.excerpt}</div>
+              <Link to={post.fields.slug} className="moreLink blue">Read more →</Link>
             </div>
+          </div>
         </div>
       </div>
-))}
-</div>
+      ))}
+
+      </div>
 </section>
 </Layout>
   )
