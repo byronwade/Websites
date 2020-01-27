@@ -6,7 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const portfolioPageTemplate = path.resolve(`src/templates/portfolioPageTemplate.js`)
   const result = await graphql(`
     {
-      allMarkdownRemark(filter: {fields: {slug: {regex: "/blog|portfolio/"}}}) {
+      allMarkdownRemark(filter: {fields: {slug: {regex: "/blog/"}}}) {
         edges {
           node {
             fields {
