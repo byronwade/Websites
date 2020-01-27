@@ -11,7 +11,7 @@ import Img from "gatsby-image"
 export default function Template({ data }) {
 
   const { edges: posts } = data.allMarkdownRemark
-  
+
   return (
 
     <Layout>
@@ -27,7 +27,7 @@ export default function Template({ data }) {
     <section>
       <div className="container">
         
-      {posts && posts.map(({ node: post }) => (
+      {posts.map(({ node: post }) => (
       <div className="row">
         <div className="col-lg-12">
           <div className="blogMedia">

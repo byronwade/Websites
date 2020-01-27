@@ -6,10 +6,9 @@ import { graphql } from "gatsby"
 
 
 export default function Template({ data }) {
-
   const { edges: projects } = data.allMarkdownRemark
-  console.log(projects)
-  return (
+  console.log(data.allMarkdownRemark.edges.length > 3)
+  return ( 
     <Layout>
       <SEO title="Portfolio" />
       <section className="jumbo">
@@ -29,14 +28,15 @@ export default function Template({ data }) {
                         <a href="https://www.clutchdevelopments.com/" className="importantBody">
                             <h3 className="title">Clutch Developments</h3>
                             <div className="intro">This is my own website/app development firm I made from scratch.</div>
-                            <span className="moreLink blue">See websites →</span>
+                            <span className="moreLink blue">See website →</span>
                         </a>
                     </div>
                 </div>
             </div>
 
+            
             <div className="row">
-                {projects && projects.map(({ node: project }) => (
+                {projects.map(({ node: project }) => (
                 <div className="col-lg-4">
                     <div className="portfolioMedia">
                         <a href={project.frontmatter.github} className="portfolioBody">

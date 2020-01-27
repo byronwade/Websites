@@ -62,7 +62,7 @@ const { edges: projects } = data.projects
             <div className="col-6 col-md">
                 <h4>Blog Posts</h4>
                 <ul className="list-unstyled">
-                  {posts && posts.map(({ node: post }) => (
+                  {posts.map(({ node: post }) => (
                     <li><Link className="listItem" to={post.fields.slug}>{post.frontmatter.title}</Link></li>
                   ))}
                 </ul>
@@ -70,7 +70,7 @@ const { edges: projects } = data.projects
             <div className="col-6 col-md">
                 <h4>Personal Projects on Github</h4>
                 <ul className="list-unstyled">
-                  {projects && projects.map(({ node: project }) => (
+                  {projects.map(({ node: project }) => (
                     <li><a className="listItem" href={project.frontmatter.github}>{project.frontmatter.title}</a></li>
                   ))}
                 </ul>
