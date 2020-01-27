@@ -1,9 +1,7 @@
 ---
-title: 'Thorbis Hosting #2'
+title: Thorbis Web Hosting
 auther: Byron Wade
 date: 2020-01-26T06:17:21.638Z
-image: HACKK2.jpg
-featured: true
 github: 'https://github.com/byronwade/Thorbis'
 description: >-
   I built this admin panel to be used for developers, I wanted to create a
