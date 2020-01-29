@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Scarborough Lumber`,
-    description: `The Scarborough's business was originally started in 1957 by Gene Scarborough, a WWII POW veteran who left his home state of Mississippi with his family in search of a new start in California.  He eventually settled down with his wife Nena and his three children, Alvin, Linda and Mike, in Scotts Valley where he bought and ran Standard Lumber. `,
+    title: `Gatsby WordPress Themes`,
+    description: `THis website is a free, open source project to help developers get started on gatsby mixed wordpress sites, with wordpress as a headless CMS and gatsby as the front end framework we will have amazingly fast and efficient websites.`,
     author: `Byron Wade`,
   },
   plugins: [

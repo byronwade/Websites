@@ -10,7 +10,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section>
       <div className="container">
-        <h1>Scarborough's Home Page</h1>
+        <h1>Website Under Construction</h1>
+        <h3>whatsdns.org is coming soon.</h3>
       </div>
     </section>
   </Layout>

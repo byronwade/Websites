@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Scarborough Lumber`,
-    description: `The Scarborough's business was originally started in 1957 by Gene Scarborough, a WWII POW veteran who left his home state of Mississippi with his family in search of a new start in California.  He eventually settled down with his wife Nena and his three children, Alvin, Linda and Mike, in Scotts Valley where he bought and ran Standard Lumber. `,
+    title: `What is DNS?`,
+    description: `This website will give you a clear understanding of what DNS is and how to set it up, we will even give full walk through, for every hosting company we can.`,
     author: `Byron Wade`,
   },
   plugins: [
