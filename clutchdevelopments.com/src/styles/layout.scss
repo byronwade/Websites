@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,700,700i|Open+Sans:400,400i,800,800i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Domine&display=swap');
-
 /*
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
@@ -19,6 +16,7 @@ font-family: 'Josefin Slab', serif; ---- more boxy style
 */
 @import "grid.scss";
 @import "reset.scss";
+@import "type.scss";
 
 .square {
   width:100px;
