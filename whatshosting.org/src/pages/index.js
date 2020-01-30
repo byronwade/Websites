@@ -8,10 +8,11 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section>
+    <section className="hero">
       <div className="container">
         <h1>Website Under Construction</h1>
-        <h3>whatshosting.org is coming soon.</h3>
+        <p>whatshosting.org is coming soon. If you would like to contribute to this website please contact me at <a href="#">bcw1995@gmail.com</a>.</p>
+        <p>This project will be opensource and on my <a href="https://github.com/byronwade">github</a></p>
       </div>
     </section>
   </Layout>

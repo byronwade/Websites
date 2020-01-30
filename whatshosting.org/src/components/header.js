@@ -4,7 +4,15 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <>
-
+    <header className="sticky">
+      <div className="nav">
+        <div className="container">
+          <div className="branding">
+            whatshosting.org
+          </div>
+        </div>
+      </div>
+    </header>
   </>
 )
 
@@ -13,7 +21,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: `Garrison Incorporated`,
+  siteTitle: `What is hosting?`,
 }
 
 export default Header
