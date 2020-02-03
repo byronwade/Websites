@@ -18,7 +18,7 @@ const Contact = () => (
     </section>
     <section>
       <div className="container">
-        <form className="contactForm" id="contact" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="contactForm" id="contact" method="POST" name="contact" action="https://getform.io/f/6ce15961-31e4-4422-8be5-7a6480fc17d0">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <div className="group-val">
