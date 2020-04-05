@@ -6,31 +6,31 @@ module.exports = {
     siteUrl: `https://www.whatsdns.org`
   },
   plugins: [
+    'gatsby-plugin-slug',
+    `gatsby-plugin-offline`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
+    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "WORDPRESS",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "wordpress",
+        // Url to query from
+        url: "http://cms.local/graphql",
+        // refetch interval in seconds
+        // refetchInterval: 600,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it
         trackingId: "UA-138727201-4",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Enables Google Optimize Experiment ID
-        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "byronwade.com",
       },
     },
     {
@@ -42,9 +42,6 @@ module.exports = {
         showSpinner: false,
       },
     },
-    'gatsby-plugin-robots-txt',
-    `gatsby-plugin-sitemap`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -52,10 +49,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-plugin-slug',
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -68,8 +61,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
